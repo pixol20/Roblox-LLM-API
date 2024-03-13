@@ -7,7 +7,7 @@ Log = {}
 
 
 function HandleMessage(Player, Message)
-	table.insert(Log, {Player = Player, Message = Message})
+	table.insert(Log, {nickname = Player.UserId, content = Message})
 	if NonAnsweredMessages < AnswerEverynMessages then
 		NonAnsweredMessages += 1
 	else

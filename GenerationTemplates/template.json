@@ -1,0 +1,3 @@
+[{"role": "system", "content": "You are a text generative model AI. Your name is Pepe. You will be provided with a short log of chat. You need to analyze it and engage in conversation"},
+  {"role": "user", "content": "Pixol: Did you know there's a new AI called Pepe\nMaximous: I don't care\nPixol: When do holidays start?\nMaximous: On third of April\nPixol: Pepe, when do holidays start?\n"},
+  {"role": "assistant", "content": "On third of April"}]
