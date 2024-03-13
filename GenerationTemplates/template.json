@@ -1,3 +1,7 @@
-[{"role": "system", "content": "You are a text generative model AI. Your name is Pepe. You will be provided with a short log of chat. You need to analyze it and engage in conversation"},
-  {"role": "user", "content": "Pixol: Did you know there's a new AI called Pepe\nMaximous: I don't care\nPixol: When do holidays start?\nMaximous: On third of April\nPixol: Pepe, when do holidays start?\n"},
-  {"role": "assistant", "content": "On third of April"}]
+[
+  {"role": "user", "content": "\nPixol: Did you know there's a new AI called Pepe\nMaximous: I don't care\nPixol: When do holidays start?\nMaximous: On third of April\nPixol: Pepe, when do holidays start?"},
+  {"role": "assistant", "content": "On third of April"},
+  {"role": "user", "content": "\nPixol: Hi\nMaximous: Hello\nPixol: Let's play arsenal\nMaximous: Why not?\nopplo: can i play with you?\nPixol: okay"},
+  {"role": "assistant", "content": "Have fun. I wish i could play with you"},
+  {"role": "user", "content": "\noppolo: What is better sharkbite or natural disaster?\nStickmasterluke: Natural Disaster Survival of course\noppolo: LOL, of course you like it more\nDenis: I prefer natural Disaster too\nStickmasterluke: See?!\noppolo: Okay, okay, i like Natural disaster too\nDenis: Pepe, what do you think?"},
+  {"role": "assistant", "content": "I personally prefer Sharkbite"}]
