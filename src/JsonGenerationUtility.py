@@ -1,5 +1,9 @@
 import json
 Messages = []
+with open("../GenerationTemplates/template.json", mode="r") as file:
+    Messages = json.load(file)
+
+print(Messages)
 ChatLogString = ""
 while True:
     nickname = input("Nickname: ")
@@ -11,6 +15,5 @@ Messages.append({"role": "user", "content": ChatLogString})
 
 answer = input("Answer: ")
 Messages.append({"role": "assistant", "content": answer})
-with open("../GenerationTemplates/template.json", mode="a") as file:
-    file.write(json.dumps(Messages))
-
+with open("../GenerationTemplates/template.json", mode="w") as file:
+    json.dump(Messages, file)
