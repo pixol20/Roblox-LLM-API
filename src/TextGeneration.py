@@ -29,7 +29,7 @@ def GenerateText(History):
     TokenizedChatLen = 0
     TokenizedChat = Tokenizer.apply_chat_template(np.concatenate((Template, History)), tokenize=True, add_generation_prompt=True, return_tensors="pt").to("cuda")
     InputLen = TokenizedChat.shape[1]
-    GeneratedIds = Model.generate(TokenizedChat, max_new_tokens=50, pad_token_id=Tokenizer.eos_token_id, top_p=2.5, do_sample=True)
+    GeneratedIds = Model.generate(TokenizedChat, max_new_tokens=50, pad_token_id=Tokenizer.eos_token_id, top_p=1.3, do_sample=True)
     Output = Tokenizer.batch_decode(GeneratedIds[:, InputLen:], skip_special_tokens=True)[0]
     print(Tokenizer.batch_decode(GeneratedIds, skip_special_tokens=True)[0])
     return Output
