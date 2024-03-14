@@ -14,7 +14,7 @@ local RandomXMin = -50
 local RandomZMin = -50
 local RandomXMax = 50
 local RandomZMax = 50
-
+PrimaryPart:SetNetworkOwner(nil)
 
 
 while true do
