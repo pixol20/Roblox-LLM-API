@@ -7,7 +7,7 @@ config = {
   },
   "Model":
   {
-    "pretrained_model_name_or_path": "../models/Mistral-7B-Instruct-v0.2",
+    "pretrained_model_name_or_path": "mistralai/Mistral-7B-Instruct-v0.2",
     "config": None,
     "cache_dir": None,
     "ignore_mismatched_sizes": False,
